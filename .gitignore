@@ -1,0 +1,12 @@
+# Node modules
+node_modules/
+
+# Terraform local files
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+
+# OS / IDE files
+*.log
+*.DS_Store
+.vscode/

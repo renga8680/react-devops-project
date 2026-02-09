@@ -1,0 +1,16 @@
+---
+- name: Install kubectl & Azure CLI
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Install Azure CLI
+      shell: |
+        curl -sL https://aka.ms/InstallAzureCLIDeb | bash
+      args:
+        creates: /usr/bin/az
+
+    - name: Install kubectl
+      snap:
+        name: kubectl
+        classic: yes
