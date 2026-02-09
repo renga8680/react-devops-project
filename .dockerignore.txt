@@ -1,0 +1,24 @@
+# Node modules are heavy, don't copy from host
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Git metadata
+.git
+.gitignore
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# Build folders
+build
+dist
+
+# Environment files (optional, if you copy separately)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
